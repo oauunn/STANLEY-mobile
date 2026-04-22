@@ -1,0 +1,78 @@
+@charset "utf-8";
+@import url('reset.css');
+@import url('font.css');
+
+body {
+    font-family: 'Pretendard', 'Noto Sans KR';
+    font-weight: 400;
+    background-color: antiquewhite;
+}
+
+.inner {
+    max-width: 375px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+header .inner {
+    padding: 40px 10px 20px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .inner .logo {
+    width: 120px;
+}
+
+header .inner .logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+header .inner .icon {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+header .inner .icon img {
+    width: 18px;
+    object-fit: cover;
+}
+
+
+/* 메인비주얼 */
+.mainvisual {}
+.mainvisual .inner {
+    width: 100%;
+    margin: 0 auto;
+}
+.mainvisual .inner .swiper.mySwiper {
+}
+.mainvisual .inner .swiper.mySwiper .swiper-wrapper {
+    
+}
+.mainvisual .inner .swiper.mySwiper .swiper-wrapper .swiper-slide {
+}
+.mainvisual .inner .swiper.mySwiper .swiper-wrapper .swiper-slide a {
+}
+
+.mainvisual .inner .swiper.mySwiper .swiper-wrapper .swiper-slide a img {
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    width: 335px;
+    height: 228px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.mainvisual .inner .swiper.mySwiper .swiper-wrapper .swiper-slide p {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: red;
+    font-size: 12px;
+    font-weight: 500;
+}

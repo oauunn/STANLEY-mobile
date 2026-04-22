@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STANLEY</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="inner">
+            <div class="logo">
+                <img src="img/logo-b.png" alt="로고">
+            </div><!-- .logo end -->
+            <div class="icon">
+                <img src="img/profile.png" alt="마이페이지">
+                <img src="img/cart.png" alt="장바구니">
+                <img src="img/search.png" alt="검색">
+            </div><!-- .icon end -->
+        </div><!-- .inner end -->
+    </header>
+
+    <section class="mainvisual">
+        <div class="inner">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="img/jennie.jpeg" alt="미드나잇루비">
+                        </a>
+                        <p>미드나잇 루비</p>
+                    </div><!-- .swiper-slide end -->
+
+                </div><!-- .swiper-wrapper end -->
+            </div><!-- .swiper.mySwiper end -->
+        </div><!-- .inner end -->
+    </section><!-- .mainvisual end -->
+
+
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+</body>
+
+</html>
