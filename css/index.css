@@ -79,38 +79,85 @@ header .inner .icon img {
 
 
 /* 카테고리 */
-.category {}
+.category {
+    font-family: 'Pretendard', 'Noto Sans KR';
+    color: #1c1c1c;
+}
 
 .category .inner {
     width: 100%;
     padding: 20px;
 }
 
-.category .inner ul {}
+.category .inner ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 10px;
+}
 
-.category .inner ul li {}
+.category .inner ul li {
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: 30px;
+    border: 0.5px solid #1c1c1c50;
+}
+.category .inner ul li:hover {
+    background-color: #1c1c1c;
+    color: #fff;
+}
 
-.category .inner a {}
+.category .inner .more {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.category .inner .more a {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3c3c3c;
+    text-decoration: underline;
+}
 
 .category .inner .list {
     display: flex;
+    justify-content: space-between;
 }
 
-.category .inner .list .item {}
+.category .inner .list .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: aqua;
+}
 
 .category .inner .list .item a {}
 
-.category .inner .list .item a img {}
+.category .inner .list .item a img {
+    width: 103px;
+    object-fit: cover;
+}
 
-.category .inner .list .item .text {}
+.category .inner .list .item .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-.category .inner .list .item .text h3 {}
+.category .inner .list .item .text h3 {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+}
 
 .category .inner .list .item .text h4 {}
 
-.category .inner .list .item .text ul {}
+.category .inner .list .item .text ol {}
 
-.category .inner .list .item .text ul li {}
+.category .inner .list .item .text ol li {}
 
 
 
