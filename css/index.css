@@ -90,7 +90,7 @@ footer .inner {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
 }
 
 footer .inner .nav {
@@ -157,8 +157,11 @@ footer .inner .text li:first-child {
     gap: 3px;
 }
 
-footer .inner .text li span {}
+footer .inner .logo {
+    width: 175px;
+}
 
-footer .inner .logo {}
-
-footer .inner .logo img {}
+footer .inner .logo img {
+    width: 100%;
+    object-fit: cover;
+}
