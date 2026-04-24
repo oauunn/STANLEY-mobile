@@ -5,7 +5,6 @@
 body {
     font-family: 'Pretendard', 'Noto Sans KR';
     font-weight: 400;
-    background-color: antiquewhite;
 }
 
 .inner {
@@ -272,7 +271,7 @@ header .inner .icon img {
 .review .inner {
     width: 100%;
     margin: 0 auto;
-    padding: 25px 20px;
+    padding: 25px 20px 100px 20px;
 }
 
 .review .inner h1 {
@@ -340,6 +339,7 @@ footer .inner {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    background-color: #8c8c8c20;
 }
 
 footer .inner .nav {
