@@ -110,14 +110,20 @@ header .inner .icon img {
     color: #fff;
 }
 
+
+/* 공통 */
 .category .inner .more,
-.main .inner .more {
+.main .inner .more,
+.recommend .inner .more,
+.review .inner .more {
     margin-bottom: 20px;
     text-align: right;
 }
 
 .category .inner .more a,
-.main .inner .more a {
+.main .inner .more a,
+.recommend .inner .more a,
+.review .inner .more a {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.5;
@@ -126,34 +132,40 @@ header .inner .icon img {
 }
 
 .category .inner .list,
-.main .inner .list {
+.main .inner .list,
+.recommend .inner .list,
+.review .inner .list {
     display: flex;
     justify-content: space-between;
 }
 
 .category .inner .list .item,
-.main .inner .list .item {
+.main .inner .list .item,
+.recommend .inner .list .item {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .category .inner .list .item img,
-.main .inner .list .item img {
+.main .inner .list .item img,
+.recommend .inner .list .item img {
     width: 103px;
     object-fit: cover;
     border: 0.5px solid #1c1c1c50;
 }
 
 .category .inner .list .item .text,
-.main .inner .list .item .text {
+.main .inner .list .item .text,
+.recommend .inner .list .item .text {
     display: flex;
     flex-direction: column;
     gap: 3px;
 }
 
 .category .inner .list .item .text h3,
-.main .inner .list .item .text h3 {
+.main .inner .list .item .text h3,
+.recommend .inner .list .item .text h3 {
     width: 103px;
     white-space: nowrap;
     overflow: hidden;
@@ -164,14 +176,16 @@ header .inner .icon img {
 }
 
 .category .inner .list .item .text h4,
-.main .inner .list .item .text h4 {
+.main .inner .list .item .text h4,
+.recommend .inner .list .item .text h4 {
     font-size: 12px;
     font-weight: 500;
     line-height: 1.5;
 }
 
 .category .inner .list .item .text ol,
-.main .inner .list .item .text ol {
+.main .inner .list .item .text ol,
+.recommend .inner .list .item .text ol {
     display: flex;
     gap: 5px;
     font-size: 11px;
@@ -180,12 +194,14 @@ header .inner .icon img {
 }
 
 .category .inner .list .item .text ol li:first-child,
-.main .inner .list .item .text ol li:first-child {
+.main .inner .list .item .text ol li:first-child,
+.recommend .inner .list .item .text ol li:first-child {
     color: #ff1c1c;
 }
 
 .category .inner .list .item .text ol li:last-child,
-.main .inner .list .item .text ol li:last-child {
+.main .inner .list .item .text ol li:last-child,
+.recommend .inner .list .item .text ol li:last-child {
     color: #8c8c8c;
 }
 
@@ -199,9 +215,11 @@ header .inner .icon img {
 }
 
 
-/* 메인 */
-.main {
+/* 메인, 추천 */
+.main,
+.recommend {
     font-family: 'Pretendard', 'Noto Sans KR';
+    color: #1c1c1c;
 }
 
 .main .inner {
@@ -224,9 +242,88 @@ header .inner .icon img {
 .main .inner .title strong:first-child {
     text-decoration: underline;
 }
+
 .main .inner .title p {
     font-size: 14px;
     font-weight: 600;
+    line-height: 1.5;
+}
+
+.recommend .inner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 20px;
+}
+
+.recommend .inner h1 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+
+
+/* 리뷰 */
+.review {
+    font-family: 'Pretendard', 'Noto Sans KR';
+    color: #1c1c1c;
+}
+
+.review .inner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 20px;
+}
+
+.review .inner h1 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.review .inner .list .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.review .inner .list .item img {
+    width: 200px;
+    object-fit: cover;
+    border: 0.5px solid #1c1c1c50;
+}
+
+.review .inner .list .item .text {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.review .inner .list .item .text h3 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.review .inner .list .item .text ol {
+    display: flex;
+    gap: 5px;
+}
+
+.review .inner .list .item .text ol li {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.review .inner .list .item .text ol li:first-child {
+    color: #ff1c1c;
+}
+
+.review .inner .list .item .text p {
+    font-size: 12px;
+    font-weight: 400;
     line-height: 1.5;
 }
 
