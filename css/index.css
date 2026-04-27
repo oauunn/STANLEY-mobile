@@ -419,3 +419,34 @@ footer .inner .logo img {
     width: 100%;
     object-fit: cover;
 }
+
+.nav {}
+
+.nav .inner {}
+
+.nav .inner .icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .inner .icon li {
+    padding: 10px;
+}
+
+.nav .inner .icon li a {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.nav .inner .icon li a img {
+    width: 30px;
+    object-fit: cover;
+}
+
+.nav .inner .icon li a p {
+    font-size: 12px;
+    font-weight: 400;
+    color: red;
+}
