@@ -5,6 +5,7 @@
 body {
     font-family: 'Pretendard', 'Noto Sans KR';
     font-weight: 400;
+    background-color: beige;
 }
 
 .inner {
@@ -46,16 +47,11 @@ header .inner .icon img {
     margin: 0 auto;
 }
 
-.mainvisual .inner .swiper.mySwiper {}
-
-.mainvisual .inner .swiper.mySwiper .swiper-wrapper .swiper-slide {}
-
-.mainvisual .inner .swiper.mySwiper .swiper-wrapper .swiper-slide a {
+.mainvisual .inner .swiper.mySwiper .swiper-wrapper .swiper-slide {
     display: inline-block;
-    margin-left: 20px;
 }
 
-.mainvisual .inner .swiper.mySwiper .swiper-wrapper .swiper-slide a img {
+.mainvisual .inner .swiper.mySwiper .swiper-wrapper .swiper-slide img {
     display: block;
     margin: 0 auto;
     position: relative;
@@ -70,10 +66,13 @@ header .inner .icon img {
     bottom: 20px;
     left: 40px;
     border-radius: 50px;
-    padding: 10px;
-    background-color: red;
+    padding: 10px 15px;
+    background-color: #ffffff40;
+    backdrop-filter: blur(2px);
+    border: 1px solid #ffffff50;
     font-size: 12px;
     font-weight: 500;
+    line-height: 1.5;
 }
 
 
@@ -109,6 +108,11 @@ header .inner .icon img {
     color: #fff;
 }
 
+.category .inner ul li.active {
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
 
 /* 공통 */
 .category .inner .more,
@@ -130,15 +134,32 @@ header .inner .icon img {
     text-decoration: underline;
 }
 
-.category .inner .list,
+/* 프로덕트 스와이퍼 슬라이드 */
+.category .inner .swiper.product .swiper-wrapper .swiper-slide .item img {
+    width: 103px;
+    height: 138px;
+    object-fit: cover;
+}
+.category .inner .swiper.product .swiper-wrapper .swiper-slide .item .text {}
+.category .inner .swiper.product .swiper-wrapper .swiper-slide .item .text h3 {}
+.category .inner .swiper.product .swiper-wrapper .swiper-slide .item .text h4 {}
+.category .inner .swiper.product .swiper-wrapper .swiper-slide .item .text ol {}
+.category .inner .swiper.product .swiper-wrapper .swiper-slide .item .text ol li {}
+
+
+
+
+
+.category .inner .swiper.product .swiper-wrapper .swiper-slide,
 .main .inner .list,
 .recommend .inner .list,
 .review .inner .list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.category .inner .list .item,
+.category .inner .swiper.product .swiper-wrapper .swiper-slide .item,
 .main .inner .list .item,
 .recommend .inner .list .item {
     display: flex;
@@ -146,15 +167,16 @@ header .inner .icon img {
     gap: 10px;
 }
 
-.category .inner .list .item img,
+.category .inner .swiper.product .swiper-wrapper .swiper-slide .item img,
 .main .inner .list .item img,
 .recommend .inner .list .item img {
     width: 103px;
+    height: 138px;
     object-fit: cover;
     border: 0.5px solid #1c1c1c50;
 }
 
-.category .inner .list .item .text,
+.category .inner .swiper.product .swiper-wrapper .swiper-slide .item .text,
 .main .inner .list .item .text,
 .recommend .inner .list .item .text {
     display: flex;
@@ -162,7 +184,7 @@ header .inner .icon img {
     gap: 3px;
 }
 
-.category .inner .list .item .text h3,
+.category .inner .swiper.product .swiper-wrapper .swiper-slide .item .text h3,
 .main .inner .list .item .text h3,
 .recommend .inner .list .item .text h3 {
     width: 103px;
@@ -174,7 +196,7 @@ header .inner .icon img {
     line-height: 1.5;
 }
 
-.category .inner .list .item .text h4,
+.category .inner .swiper.product .swiper-wrapper .swiper-slide .item .text h4,
 .main .inner .list .item .text h4,
 .recommend .inner .list .item .text h4 {
     font-size: 12px;
@@ -182,7 +204,7 @@ header .inner .icon img {
     line-height: 1.5;
 }
 
-.category .inner .list .item .text ol,
+.category .inner .swiper.product .swiper-wrapper .swiper-slide .item .text ol,
 .main .inner .list .item .text ol,
 .recommend .inner .list .item .text ol {
     display: flex;
@@ -192,19 +214,17 @@ header .inner .icon img {
     line-height: 1.5;
 }
 
-.category .inner .list .item .text ol li:first-child,
+.category .inner .swiper.product .swiper-wrapper .swiper-slide .item .text ol li:first-child,
 .main .inner .list .item .text ol li:first-child,
 .recommend .inner .list .item .text ol li:first-child {
     color: #ff1c1c;
 }
 
-.category .inner .list .item .text ol li:last-child,
+.category .inner .swiper.product .swiper-wrapper .swiper-slide .item .text ol li:last-child,
 .main .inner .list .item .text ol li:last-child,
 .recommend .inner .list .item .text ol li:last-child {
     color: #8c8c8c;
 }
-
-
 
 /* 구분선 */
 .line {

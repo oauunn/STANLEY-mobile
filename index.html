@@ -10,6 +10,9 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" /> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script> -->
+
 
 </head>
 
@@ -21,7 +24,6 @@
                 <img src="img/logo-b.png" alt="로고">
             </div><!-- .logo end -->
             <div class="icon">
-                <img src="img/profile.png" alt="마이페이지">
                 <img src="img/cart.png" alt="장바구니">
                 <img src="img/search.png" alt="검색">
             </div><!-- .icon end -->
@@ -34,12 +36,15 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
 
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <img src="img/jennie.jpeg" alt="미드나잇루비">
-                        </a>
+                    <a href="#" class="swiper-slide">
+                        <img src="img/jennie.jpeg" alt="미드나잇루비">
                         <p>미드나잇 루비</p>
-                    </div><!-- .swiper-slide end -->
+                    </a><!-- .swiper-slide end -->
+
+                    <a href="#" class="swiper-slide">
+                        <img src="img/blackdamask.png" alt="블랙다마스크">
+                        <p>블랙 다마스크</p>
+                    </a><!-- .swiper-slide end -->
 
                 </div><!-- .swiper-wrapper end -->
             </div><!-- .swiper.mySwiper end -->
@@ -49,54 +54,82 @@
     <section class="category">
         <div class="inner">
             <ul>
-                <li>전체</li>
-                <li>LIMITED EDITION</li>
-                <li>하이드레이션</li>
-                <li>퀜처</li>
-                <li>아이스 플로우</li>
-                <li>카페</li>
+                <li class="active">전체</li>
+                <li data-category="limited">LIMITED EDITION</li>
+                <li data-category="hydration">하이드레이션</li>
+                <li data-category="quencher">퀜처</li>
+                <li data-category="iceflow">아이스 플로우</li>
+                <li data-category="cafe">카페</li>
             </ul>
             <div class="more">
                 <a href="#">더보기</a>
             </div><!-- .more end -->
-            <div class="list">
-                <div class="item" onclick="location.href='#';" style="cursor: pointer;">
-                    <img src="img/quencher-rose.png" alt="스탠리퀜처H2.0플로우스테이트텀블러">
-                    <div class="text">
-                        <h3>스탠리 퀜처 H2.0 플로우 스테이트 텀블러 591ml, 로즈쿼츠 2.0 (손잡이)</h3>
-                        <h4>46,000원</h4>
-                        <ol>
-                            <li>★</li>
-                            <li>4.93</li>
-                            <li>• 리뷰 2,848</li>
-                        </ol>
-                    </div><!-- .text end -->
-                </div><!-- .item end -->
-                <div class="item" onclick="location.href='#';" style="cursor: pointer;">
-                    <img src="img/quencher-rose.png" alt="스탠리퀜처H2.0플로우스테이트텀블러">
-                    <div class="text">
-                        <h3>스탠리 퀜처 H2.0 플로우 스테이트 텀블러 591ml, 로즈쿼츠 2.0 (손잡이)</h3>
-                        <h4>46,000원</h4>
-                        <ol>
-                            <li>★</li>
-                            <li>4.93</li>
-                            <li>• 리뷰 2,848</li>
-                        </ol>
-                    </div><!-- .text end -->
-                </div><!-- .item end -->
-                <div class="item" onclick="location.href='#';" style="cursor: pointer;">
-                    <img src="img/quencher-rose.png" alt="스탠리퀜처H2.0플로우스테이트텀블러">
-                    <div class="text">
-                        <h3>스탠리 퀜처 H2.0 플로우 스테이트 텀블러 591ml, 로즈쿼츠 2.0 (손잡이)</h3>
-                        <h4>46,000원</h4>
-                        <ol>
-                            <li>★</li>
-                            <li>4.93</li>
-                            <li>• 리뷰 2,848</li>
-                        </ol>
-                    </div><!-- .text end -->
-                </div><!-- .item end -->
-            </div><!-- .list end -->
+
+            <!-- Swiper -->
+            <div class="swiper product">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="item" onclick="location.href='#';" style="cursor: pointer;">
+                            <img src="img/quencher-flowstate.png" alt="스탠리퀜처H2.0플로우스테이트텀블러">
+                            <div class="text">
+                                <h3>스탠리 퀜처 H2.0 플로우 스테이트 텀블러 887ml, 블랙 2.0</h3>
+                                <h4>49,000원</h4>
+                                <ol>
+                                    <li>★</li>
+                                    <li>4.94</li>
+                                    <li>• 리뷰 6,142</li>
+                                </ol>
+                            </div><!-- .text end -->
+                        </div><!-- .item end -->
+                    </div><!-- swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <div class="item" onclick="location.href='#';" style="cursor: pointer;">
+                            <img src="img/quencher-rose.png" alt="스탠리퀜처H2.0플로우스테이트텀블러">
+                            <div class="text">
+                                <h3>스탠리 퀜처 H2.0 플로우 스테이트 텀블러 591ml, 로즈쿼츠 2.0 (손잡이)</h3>
+                                <h4>46,000원</h4>
+                                <ol>
+                                    <li>★</li>
+                                    <li>4.93</li>
+                                    <li>• 리뷰 2,848</li>
+                                </ol>
+                            </div><!-- .text end -->
+                        </div><!-- .item end -->
+                    </div><!-- swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <div class="item" onclick="location.href='#';" style="cursor: pointer;">
+                            <img src="img/quencher-flip.png" alt="스탠리퀜처프로투어플립스트로텀블러">
+                            <div class="text">
+                                <h3>스탠리 퀜처 프로투어 플립 스트로 텀블러 887ml, 크림 로즈 골드</h3>
+                                <h4>54,000원</h4>
+                                <ol>
+                                    <li>★</li>
+                                    <li>4.92</li>
+                                    <li>• 리뷰 12,770</li>
+                                </ol>
+                            </div><!-- .text end -->
+                        </div><!-- .item end -->
+                    </div><!-- swiper-slide end -->
+
+                    <div class="swiper-slide">
+                        <div class="item" onclick="location.href='#';" style="cursor: pointer;">
+                            <img src="img/quencher-flip-2.png" alt="스탠리퀜처프로투어플립스트로텀블러">
+                            <div class="text">
+                                <h3>스탠리 퀜처 프로투어 플립 스트로 텀블러 591ml, 포멜로</h3>
+                                <h4>48,000원</h4>
+                                <ol>
+                                    <li>★</li>
+                                    <li>4.93</li>
+                                    <li>• 리뷰 2,848</li>
+                                </ol>
+                            </div><!-- .text end -->
+                        </div><!-- .item end -->
+                    </div><!-- swiper-slide end -->
+                </div><!-- swiper-wrapper end -->
+            </div><!-- swiper product end -->
+
             <div class="line"></div>
         </div><!-- .inner end -->
     </section><!-- .category end -->
@@ -126,7 +159,7 @@
                     </div><!-- .text end -->
                 </div><!-- .item end -->
                 <div class="item" onclick="location.href='#';" style="cursor: pointer;">
-                    <img src="img/quencher-rose.png" alt="스탠리퀜처H2.0플로우스테이트텀블러">
+                    <img src="img/quencher-flow-purple.png" alt="스탠리퀜처H2.0플로우스테이트텀블러">
                     <div class="text">
                         <h3>스탠리 퀜처 H2.0 플로우 스테이트 텀블러 591ml, 로즈쿼츠 2.0 (손잡이)</h3>
                         <h4>46,000원</h4>
@@ -138,7 +171,7 @@
                     </div><!-- .text end -->
                 </div><!-- .item end -->
                 <div class="item" onclick="location.href='#';" style="cursor: pointer;">
-                    <img src="img/quencher-rose.png" alt="스탠리퀜처H2.0플로우스테이트텀블러">
+                    <img src="img/quencher-oasis.png" alt="스탠리퀜처H2.0플로우스테이트텀블러">
                     <div class="text">
                         <h3>스탠리 퀜처 H2.0 플로우 스테이트 텀블러 591ml, 로즈쿼츠 2.0 (손잡이)</h3>
                         <h4>46,000원</h4>
@@ -162,7 +195,7 @@
             </div><!-- .more end -->
             <div class="list">
                 <div class="item" onclick="location.href='#';" style="cursor: pointer;">
-                    <img src="img/quencher-rose.png" alt="스탠리퀜처H2.0플로우스테이트텀블러">
+                    <img src="img/quencher-flip-2.png" alt="스탠리퀜처H2.0플로우스테이트텀블러">
                     <div class="text">
                         <h3>스탠리 퀜처 H2.0 플로우 스테이트 텀블러 591ml, 로즈쿼츠 2.0 (손잡이)</h3>
                         <h4>46,000원</h4>
@@ -174,7 +207,7 @@
                     </div><!-- .text end -->
                 </div><!-- .item end -->
                 <div class="item" onclick="location.href='#';" style="cursor: pointer;">
-                    <img src="img/quencher-rose.png" alt="스탠리퀜처H2.0플로우스테이트텀블러">
+                    <img src="img/quencher-flip.png" alt="스탠리퀜처H2.0플로우스테이트텀블러">
                     <div class="text">
                         <h3>스탠리 퀜처 H2.0 플로우 스테이트 텀블러 591ml, 로즈쿼츠 2.0 (손잡이)</h3>
                         <h4>46,000원</h4>
@@ -186,7 +219,7 @@
                     </div><!-- .text end -->
                 </div><!-- .item end -->
                 <div class="item" onclick="location.href='#';" style="cursor: pointer;">
-                    <img src="img/quencher-rose.png" alt="스탠리퀜처H2.0플로우스테이트텀블러">
+                    <img src="img/quencher-flowstate.png" alt="스탠리퀜처H2.0플로우스테이트텀블러">
                     <div class="text">
                         <h3>스탠리 퀜처 H2.0 플로우 스테이트 텀블러 591ml, 로즈쿼츠 2.0 (손잡이)</h3>
                         <h4>46,000원</h4>
@@ -317,21 +350,42 @@
         var swiper = new Swiper(".mySwiper", {
             spaceBetween: 30,
             centeredSlides: true,
+            loop: true,
             autoplay: {
-                delay: 2500,
+                delay: 5000,
                 disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
             },
         });
     </script>
 
+    <!-- 카테고리 -->
+    <script>
+        const categoryItems = document.querySelectorAll('.category ul li');
+
+        categoryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // 전체 active 제거
+                categoryItems.forEach(li => li.classList.remove('active'));
+
+                // 클릭 시 active 추가
+                item.classList.add('active');
+            });
+        });
+    </script>
+
+    <!-- 프로덕트 -->
+    <script>
+        var swiper = new Swiper(".product", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            grabCursor: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
