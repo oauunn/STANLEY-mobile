@@ -420,33 +420,40 @@ footer .inner .logo img {
     object-fit: cover;
 }
 
-.nav {}
+.bottom-nav .inner {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    padding: 12px 30px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1c1c1c;
+}
 
-.nav .inner {}
-
-.nav .inner .icon {
+.bottom-nav .inner .icon {
     display: flex;
     justify-content: space-between;
 }
 
-.nav .inner .icon li {
-    padding: 10px;
+.bottom-nav .inner .icon li {
+    padding: 5px;
 }
 
-.nav .inner .icon li a {
+.bottom-nav .inner .icon li a {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 7px;
     align-items: center;
 }
 
-.nav .inner .icon li a img {
+.bottom-nav .inner .icon li a img {
     width: 30px;
     object-fit: cover;
 }
 
-.nav .inner .icon li a p {
+.bottom-nav .inner .icon li a p {
     font-size: 12px;
     font-weight: 400;
-    color: red;
+    color: #fff;
 }
