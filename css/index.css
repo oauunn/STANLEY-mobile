@@ -5,7 +5,6 @@
 body {
     font-family: 'Pretendard', 'Noto Sans KR';
     font-weight: 400;
-    background-color: beige;
 }
 
 .inner {
@@ -290,15 +289,13 @@ header .inner .icon img {
 .review .inner .list {
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
 }
 
 .review .inner .list .item {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 200px;
-    background-color: orange;
+    width: 160px;
 }
 
 .review .inner .list .item img {
@@ -308,14 +305,13 @@ header .inner .icon img {
 }
 
 .review .inner .list .item .text {
-    width: 200px;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
 .review .inner .list .item .text h3 {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     line-height: 1.5;
     display: -webkit-box;
